@@ -209,6 +209,54 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 
+	Admin admin1;
+	Admin admin2("James");
+	Admin admin3(&admin2);
+
+	Jeweler jeweler1;
+	Jeweler jeweler2("George");
+	Jeweler jeweler3(&jeweler2);
+
+	Client client1;
+	Client client2("Robert");
+	Client client3(&client2);
+
+	Product product1;
+	Product product2("Ring");
+	Product product3(&product2);
+	/*
+	Order order1;
+	Order order2("Today");
+	Order order3;
+
+	Workshop workshop1;
+	Workshop workshop2("Popova.19.st");
+	Workshop workshop3(&workshop2);
+	*/
+	admin1.toConsole();
+	admin2.toConsole();
+	admin3.toConsole();
+
+	jeweler1.toConsole();
+	jeweler2.toConsole();
+	jeweler3.toConsole();
+
+	product1.toConsole();
+	product2.toConsole();
+	product3.toConsole();
+
+	client1.toConsole();
+	client2.toConsole();
+	client3.toConsole();
+	/*
+	order1.toConsole();
+	order2.toConsole();
+	order3.toConsole();
+
+	workshop1.toConsole();
+	workshop2.toConsole();
+	workshop3.toConsole();
+	*/
 	Admin admin;
 	std::string Ad_FIO;
 	int Ad_number;
